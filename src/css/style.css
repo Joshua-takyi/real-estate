@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    :root{
+        --color-text:#1B4242;
+        --color-text-first:#ffffff;
+        --color-body-bg:#F5F7F8;
+        --color-btn:#293452;
+        --color-btn-hover:#4c6096;
+        --color-icons:#DAC0A3;
+    }
+}
+
+.home{
+    background-image: url(/assets/images/interior-design-3564955.jpg);
+    background-position:center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    /* position: static; */
+}
+
+.drop{ 
+    /* z-index: ; */
+    position:absolute;
+    display:flex;
+    flex-direction: column;
+    background-color:white;
+    text-align: center;
+    padding: 20px;
+    width: 70%;
+    border-radius: 10px;
+    /* z-index:100; */
+    /* transition:ease 0.5s; */
+    top:2em;
+    left:19%;
+}
+.drop a{
+    /* borde */
+    text-align: center;
+    margin: auto;
+    padding: 5px;
+    display:block;
+    /* z-index:; */
+}
+.drop a:hover{
+    text-underline-offset: 10px;
+}
